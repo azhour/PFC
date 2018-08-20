@@ -24,26 +24,36 @@
   <!-- Add your site or application content here -->
 
 
-  <div  id="form">
-    <label  class="" for="pseudo">Choisis ton pseudo:</label>
-    <input  class="border border-warning" type="text" id="pseudo" >
-    <button class="" type="button" onclick="start()">Jouer</button>
+  <div class="formulaire row w-50 border border-warning rounded" id="form">
+    <label  class="col-12 pseudo" for="pseudo">Choisis ton pseudo:</label>
+    <input  class="  inputP col -12 border border-warning" type="text" id="pseudo" >
+    <button class=" col-12 btn btn-outline-warning btn-lg " type="button" onclick="start()">Jouer</button>
   </div>
 
-  <div id="game">
-    <ul>
-      <li>ordinateur: <span id="ordinateurPoint">0</span> points</li>
-      <li>Dernier choix: <span id="computerChoice">La partie n'a pas encore commencé</span></li>
-    </ul>
+  <div  class="container" id="game">
 
-    <ul>
-      <li><span id="pseudoPlayer">pseudo</span>: <span id="userScore">0</span> points</li>
-      <li>Dernier choix: <span id="userChoice">La partie n'a pas encore commencé</span></li>
-    </ul>
+    <h1 class="mt-2">Pierre - Feuille - Ciseaux</h1>
+    <p>Voyons voir si tu vas me battre au Pierre-Feuille-Ciseaux</p>
 
-    <button type="button" onclick="play('pierre')">Pierre</button>
-    <button type="button" onclick="play('feuille')">Feuille</button>
-    <button type="button" onclick="play('ciseaux')">Ciseaux</button>
+    <h2 class="mt-4 text-center ">Fais ton choix:</h2>
+
+    <div class="pfc mt-2 d-flex justify-content-center">
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Pierre" onclick="play('pierre')"><img src="img/Rock4.png" alt="Une image de pierre" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Feuille" onclick="play('feuille')"><img src="img/paper2.png" alt="Une image de papier" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Ciseaux" onclick="play('ciseaux')"><img src="img/scissors2.png" alt="Une image de ciseaux" width = "100"></button>
+  </div>
+
+    <div class="mt-4 row">
+    <div class=" mt-2  ordi col-6">
+      <p>Ordinateur: <div class="score mt-4" id="ordinateurPoint">0</div></p>
+      <p class="mt-4">Mon choix: <span id="computerChoice">La partie n'a pas encore commencé</span></p>
+    </div>
+
+    <div class=" mt -2  user col-6">
+      <p><span id="pseudoPlayer">Pseudo</span>: <div class="score mt-4" id="userScore">0</div></p>
+      <p class="mt-4">Ton choix: <span id="userChoice">La partie n'a pas encore commencé</span></p>
+    </div>
+    </div>
 
   </div>
 

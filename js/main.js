@@ -13,18 +13,10 @@ function start(){
   pseudoPlayerId.innerHTML = document.getElementById("pseudo").value;
 }
 
-// buttons = document.getElementsByTagName('button');
-// for(i=0; i < buttons.length ; i++){
-//   buttons[i].onclick = function(){
-//     play(this);
-//   };
-// }
+
 
 function play(userRep) {
   console.log(userRep);
-
-
-  // var userChoice = userRep.innerHTML;
 
   document.getElementById("userChoice").innerHTML= userRep;
 
@@ -70,15 +62,16 @@ function win(idWinner){
     alert("la fonction win peut prendre que 0 ou 1");
   }
   if (score === 3) {
-    alert("bravo tu as gagné");
+    alert("Bravo, tu as gagné!");
     restart();
   }else if (scorePC === 3) {
-    alert("T'es trop nul!");
+    alert("Aie dommage!Retentes ta chance!");
     restart();
 
   }
 
 }
+
 function restart() {
   score = 0;
   scorePC = 0;

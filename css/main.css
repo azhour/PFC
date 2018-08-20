@@ -97,6 +97,55 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  background: #6c757d;
+}
+
+#form{
+  margin: auto;
+}
+
+.pseudo{
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.inputP{
+  height: 50px;
+}
+h1{
+  text-align: center;
+}
+.score{
+  border: 5px solid yellow;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+li{
+  list-style-type: none;
+}
+
+p{
+  margin: auto;
+  text-align: center;
+}
+
+#userScore{
+  font-size: 127px;
+}
+#ordinateurPoint{
+  font-size: 127px;
+}
+
+.pfc{
+  margin: auto;
+}
+
+
 
 
 
