@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>PFC</title>
+  <meta name="description" content="rocks,paper,scissors">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+
+  <div class="formulaire row w-50 border border-warning rounded" id="form">
+    <label  class="col-12 pseudo" for="pseudo">Choisis ton pseudo:</label>
+    <input  class="  inputP col -12 border border-warning" type="text" id="pseudo" >
+    <button class=" col-12 btn btn-outline-warning btn-lg " type="button" onclick="start()">Jouer</button>
+  </div>
+
+  <div  class="container" id="game">
+
+    <h1 class="mt-2">Pierre - Feuille - Ciseaux</h1>
+    <p>Voyons voir si tu vas me battre au Pierre-Feuille-Ciseaux</p>
+
+    <h2 class="mt-4 text-center ">Fais ton choix:</h2>
+
+    <div class="pfc mt-2 d-flex justify-content-center">
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Pierre" onclick="play('pierre')"><img src="img/Rock4.png" alt="Une image de pierre" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Feuille" onclick="play('feuille')"><img src="img/paper2.png" alt="Une image de papier" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Ciseaux" onclick="play('ciseaux')"><img src="img/scissors2.png" alt="Une image de ciseaux" width = "100"></button>
+  </div>
+
+    <div class="mt-4 row">
+    <div class=" mt-2  ordi col-6">
+      <p>Ordinateur: <div class="score mt-4" id="ordinateurPoint">0</div></p>
+      <p class="mt-4">Mon choix: <span id="computerChoice">La partie n'a pas encore commencé</span></p>
+    </div>
+
+    <div class=" mt -2  user col-6">
+      <p><span id="pseudoPlayer">Pseudo</span>: <div class="score mt-4" id="userScore">0</div></p>
+      <p class="mt-4">Ton choix: <span id="userChoice">La partie n'a pas encore commencé</span></p>
+    </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script> -->
+  <!-- <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script> -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
