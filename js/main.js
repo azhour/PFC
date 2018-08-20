@@ -20,7 +20,7 @@ function play(userRep) {
 
   document.getElementById("userChoice").innerHTML= userRep;
 
-  var myArray = ["pierre", "feuille", "ciseaux"];
+  var myArray = ["Pierre", "Feuille", "Ciseaux"];
   var computerChoice = myArray[Math.floor(Math.random() * myArray.length)];
   document.getElementById("computerChoice").innerHTML= computerChoice;
 
@@ -28,21 +28,21 @@ function play(userRep) {
 
   }
 
-  else if (userRep === "pierre" && (computerChoice === "ciseaux")) {  // user win
+  else if (userRep === "Pierre" && (computerChoice === "Ciseaux")) {  // user win
     win(1);
-  } else if ((userRep === "pierre") && (computerChoice === "feuille")) { // user loose
+  } else if ((userRep === "Pierre") && (computerChoice === "Feuille")) { // user loose
     win(0);
 
-  } else if ((userRep === "feuille") && (computerChoice === "pierre")) { // user win
+  } else if ((userRep === "Feuille") && (computerChoice === "Pierre")) { // user win
     win(1);
 
-  } else if ((userRep === "feuille") && (computerChoice === "ciseaux")) {  // user loose
+  } else if ((userRep === "Feuille") && (computerChoice === "Ciseaux")) {  // user loose
     win(0);
 
-  } else if ((userRep === "ciseaux")&&(computerChoice === "feuille")) { // user win
+  } else if ((userRep === "Ciseaux")&&(computerChoice === "Feuille")) { // user win
     win(1);
 
-  } else if ((userRep === "ciseaux") && (computerChoice === "pierre")) { // user loose
+  } else if ((userRep === "Ciseaux") && (computerChoice === "Pierre")) { // user loose
     win(0);
 
   }
@@ -65,7 +65,7 @@ function win(idWinner){
     alert("Bravo, tu as gagné!");
     restart();
   }else if (scorePC === 3) {
-    alert("Aie dommage!Retentes ta chance!");
+    alert("Désolez tu n'as pas le niveau!!");
     restart();
 
   }
