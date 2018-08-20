@@ -2,7 +2,7 @@
 
 Formatting your script of the game : rock - paper - Scissors
 
-##Instructions
+#Instructions
 
 * An interface to create a player (first name or pseudo) before the start of the game
 * The pictures of the different possible choices are displayed on the screen

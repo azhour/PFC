@@ -25,9 +25,9 @@
 
 
   <div class="formulaire row w-50 border border-warning rounded" id="form">
-    <label  class="col-12 pseudo" for="pseudo">Choisis ton pseudo:</label>
-    <input  class="  inputP col -12 border border-warning" type="text" id="pseudo" >
-    <button class=" col-12 btn btn-outline-warning btn-lg " type="button" onclick="start()">Jouer</button>
+    <label  class="col-12 pseudo" for="pseudo"><span class="register">Choisis ton pseudo:</span></label>
+    <input  class=" inputP col -12 border border-warning text-center" type="text" id="pseudo" >
+    <button class=" col-12 btn btn-outline-warning btn-lg mt-0" type="button" onclick="start()">Jouer</button>
   </div>
 
   <div  class="container" id="game">
@@ -38,19 +38,19 @@
     <h2 class="mt-4 text-center ">Fais ton choix:</h2>
 
     <div class="pfc mt-2 d-flex justify-content-center">
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Pierre" onclick="play('pierre')"><img src="img/Rock4.png" alt="Une image de pierre" width = "100"></button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Feuille" onclick="play('feuille')"><img src="img/paper2.png" alt="Une image de papier" width = "100"></button>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Ciseaux" onclick="play('ciseaux')"><img src="img/scissors2.png" alt="Une image de ciseaux" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Pierre" onclick="play('Pierre')"><img src="img/Rock4.png" alt="Une image de Pierre" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Feuille" onclick="play('Feuille')"><img src="img/paper2.png" alt="Une image de papier" width = "100"></button>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Ciseaux" onclick="play('Ciseaux')"><img src="img/scissors2.png" alt="Une image de Ciseaux" width = "100"></button>
   </div>
 
     <div class="mt-4 row">
     <div class=" mt-2  ordi col-6">
-      <p>Ordinateur: <div class="score mt-4" id="ordinateurPoint">0</div></p>
+      <p class="pc">Ordinateur <div class="score mt-4" id="ordinateurPoint">0</div></p>
       <p class="mt-4">Mon choix: <span id="computerChoice">La partie n'a pas encore commencé</span></p>
     </div>
 
     <div class=" mt -2  user col-6">
-      <p><span id="pseudoPlayer">Pseudo</span>: <div class="score mt-4" id="userScore">0</div></p>
+      <p><span id="pseudoPlayer">Pseudo</span> <div class="score mt-4" id="userScore">0</div></p>
       <p class="mt-4">Ton choix: <span id="userChoice">La partie n'a pas encore commencé</span></p>
     </div>
     </div>
